@@ -95,5 +95,5 @@ The program will output whether the HTML is correctly formatted or not:
 
 For any questions or feedback, feel free to reach out:
 
-- **Your Name**: [me@gmail.com](mailto:khan.abdullah.shoaib@gmail.com)
+- **Abdullah**: [me@gmail.com](mailto:khan.abdullah.shoaib@gmail.com)
 - **GitHub**: [WhoisCipher](https://github.com/WhoisCipher)
