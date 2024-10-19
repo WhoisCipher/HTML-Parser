@@ -90,17 +90,10 @@ The program will output whether the HTML is correctly formatted or not:
 - **Formatted Correctly**: Indicates that all tags are properly closed and nested.
 - **Format INCORRECT!**: Indicates there are mismatched or unclosed tags.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Contributing
-
-Contributions are welcome! Please submit a pull request or open an issue for discussion.
 
 ## Contact
 
 For any questions or feedback, feel free to reach out:
 
-- **Your Name**: [your.email@example.com](mailto:your.email@example.com)
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Your Name**: [me@gmail.com](mailto:khan.abdullah.shoaib@gmail.com)
+- **GitHub**: [WhoisCipher](https://github.com/WhoisCipher)
