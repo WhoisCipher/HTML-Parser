@@ -1,99 +1,106 @@
-HTML Parser
+# HTML Parser
 
 HTML Parser is a simple command-line interface (CLI) tool designed to determine if an HTML file or string is correctly formatted. This tool helps you quickly validate HTML structures and identify mismatched tags.
-Features
 
-    Validates HTML files or strings.
-    Provides feedback on formatting correctness.
+## Features
 
-How to Use
+- Validates HTML files or strings.
+- Provides feedback on formatting correctness.
+
+## How to Use
 
 HTML Parser supports two command-line switches:
-1. File Input (-f)
+
+### 1. File Input (`-f`)
 
 Use this option to validate an HTML file.
 
-bash
-
+```bash
 htmp -f <filename>
+```
 
-Example:
-
-bash
-
+**Example:**
+```bash
 htmp -f example.html
+```
 
-2. String Input (-s)
+### 2. String Input (`-s`)
 
 Use this option to validate a string of HTML.
 
-bash
-
+```bash
 htmp -s "<html><body></body></html>"
+```
 
-Example:
-
-bash
-
+**Example:**
+```bash
 htmp -s "<div><p>Hello World</p></div>"
+```
 
-Installation
-Prerequisites
+## Installation
+
+### Prerequisites
 
 Ensure you have a C++ compiler installed on your system (e.g., g++, clang++).
-Steps to Install
 
-    Clone the Repository (if applicable):
+### Steps to Install
 
-    bash
+1. **Clone the Repository** (if applicable):
+   ```bash
+   git clone https://github.com/yourusername/HTML-Parser.git
+   cd HTML-Parser
+   ```
 
-git clone https://github.com/yourusername/HTML-Parser.git
-cd HTML-Parser
+2. **Compile the Program**:
+   ```bash
+   g++ html_parser.cpp -o htmp
+   ```
 
-Compile the Program:
+3. **Move to a Directory in Your PATH** (optional):
+   ```bash
+   sudo mv htmp /usr/local/bin/
+   ```
 
-bash
-
-g++ html_parser.cpp -o htmp
-
-Move to a Directory in Your PATH (optional):
-
-bash
-
-    sudo mv htmp /usr/local/bin/
-
-Alternative Installation via CMake
+### Alternative Installation via CMake
 
 If you prefer to use CMake for building the project, you can do so as follows:
 
-bash
-
+```bash
 mkdir build
 cd build
 cmake ..
 make
+```
 
-Example Usage
+## Example Usage
 
 To check an HTML file:
-
-bash
-
+```bash
 htmp -f myfile.html
+```
 
 To check an inline HTML string:
-
-bash
-
+```bash
 htmp -s "<html><body><h1>Hello World</h1></body></html>"
+```
 
-Output
+## Output
 
 The program will output whether the HTML is correctly formatted or not:
+- **Formatted Correctly**: Indicates that all tags are properly closed and nested.
+- **Format INCORRECT!**: Indicates there are mismatched or unclosed tags.
 
-    Formatted Correctly: Indicates that all tags are properly closed and nested.
-    Format INCORRECT!: Indicates there are mismatched or unclosed tags.
-
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request or open an issue for discussion.
+
+## Contact
+
+For any questions or feedback, feel free to reach out:
+
+- **Your Name**: [your.email@example.com](mailto:your.email@example.com)
+- **GitHub**: [yourusername](https://github.com/yourusername)
