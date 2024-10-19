@@ -1,18 +1,99 @@
-# HTML-Parser
+HTML Parser
 
-This is a simple cli tool that allows you to determine if the HTML file entered is correctly formatte or not
+HTML Parser is a simple command-line interface (CLI) tool designed to determine if an HTML file or string is correctly formatted. This tool helps you quickly validate HTML structures and identify mismatched tags.
+Features
 
-# How to Use
+    Validates HTML files or strings.
+    Provides feedback on formatting correctness.
 
-HTML Parser comes with 2 switches 
+How to Use
 
-**-f:**
-The program expects a file
+HTML Parser supports two command-line switches:
+1. File Input (-f)
 
-**-s**
-The program expects a string
+Use this option to validate an HTML file.
 
-# How to install
+bash
 
-```cmake HTML-Parser```
+htmp -f <filename>
 
+Example:
+
+bash
+
+htmp -f example.html
+
+2. String Input (-s)
+
+Use this option to validate a string of HTML.
+
+bash
+
+htmp -s "<html><body></body></html>"
+
+Example:
+
+bash
+
+htmp -s "<div><p>Hello World</p></div>"
+
+Installation
+Prerequisites
+
+Ensure you have a C++ compiler installed on your system (e.g., g++, clang++).
+Steps to Install
+
+    Clone the Repository (if applicable):
+
+    bash
+
+git clone https://github.com/yourusername/HTML-Parser.git
+cd HTML-Parser
+
+Compile the Program:
+
+bash
+
+g++ html_parser.cpp -o htmp
+
+Move to a Directory in Your PATH (optional):
+
+bash
+
+    sudo mv htmp /usr/local/bin/
+
+Alternative Installation via CMake
+
+If you prefer to use CMake for building the project, you can do so as follows:
+
+bash
+
+mkdir build
+cd build
+cmake ..
+make
+
+Example Usage
+
+To check an HTML file:
+
+bash
+
+htmp -f myfile.html
+
+To check an inline HTML string:
+
+bash
+
+htmp -s "<html><body><h1>Hello World</h1></body></html>"
+
+Output
+
+The program will output whether the HTML is correctly formatted or not:
+
+    Formatted Correctly: Indicates that all tags are properly closed and nested.
+    Format INCORRECT!: Indicates there are mismatched or unclosed tags.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
