@@ -88,7 +88,7 @@ htmp -s "<html><body><h1>Hello World</h1></body></html>"
 
 The program will output whether the HTML is correctly formatted or not:
 - **Formatted Correctly**: Indicates that all tags are properly closed and nested.
-- **Format INCORRECT!**: Indicates there are mismatched or unclosed tags.
+- **Format INCORRECT!**: Indicates there are mismatched or unclosed tags along with row and column number the error was found at(Error: [error type]:row:col).
 
 
 ## Contact
